@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gray-900 fixed-top w-full z-50">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <div class="navbar" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="header" class="flex items-center justify-center bg-gray-900 text-white py-20 h-screen relative">
+    <div class="absolute inset-0 bg-opacity-50 bg-black z-0"></div>
+    <div class="z-10 text-center">
+      <h1 class="text-5xl font-semibold">A Mohammed Alhaan</h1>
+      <p class="mt-4 text-xl">Software Engineer | Data Science & AI Enthusiast | Problem Solver</p>
+    </div>
+  </header>
+
+<!-- About Me Section -->
+<section id="about" class="py-16 h-screen bg-black text-white relative overflow-hidden">
+    <div class="container mx-auto text-left z-10 relative flex items-center justify-start h-full">
+      <div class="w-full md:w-1/2 animate__animated animate__fadeInLeft animate__delay-1s">
+        <h2 class="text-5xl font-bold mb-8">About Me</h2>
+        <p class="text-xl max-w-3xl">
+          I'm a passionate Software Engineer with a deep interest in Data Science and AI. With a solid foundation in Python, C++, and web technologies, I am committed to building scalable, impactful solutions.
+          I have experience with both backend and frontend development, as well as machine learning and data analysis.
+          When I’m not coding, I enjoy solving problems, learning new technologies, and contributing to open-source projects.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Rays Container -->
+    <div id="rays-container"></div>
+  </section>
+  
+
+  <!-- Education Section -->
+  <section id="education" class="py-16 bg-gray-50 h-screen">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-8">Education</h2>
+      <div class="space-y-4">
+        <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+          <h3 class="text-xl font-semibold text-blue-500">Bachelor of Technology - Computer Science (Data Science & AI)</h3>
+          <p class="text-gray-600">Hindustan Institute of Technology and Science | CGPA: 9.1</p>
+          <p class="text-gray-600">2021 - Present</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 h-screen bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-10">Experience</h2>
+      <div class="space-y-10">
+        <!-- Job 1: Boeing -->
+        <div class="animate__animated animate__fadeInLeft animate__delay-1s bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center mb-4">
+            <img src="https://via.placeholder.com/50" alt="Boeing Logo" class="rounded-full w-12 h-12 mr-4">
+            <h3 class="text-xl font-semibold text-blue-500">Software Engineer Intern @ Boeing</h3>
+          </div>
+          <p class="text-gray-700">Reduced task time by 30%. Automated workflows. APIs that talk across platforms.</p>
+        </div>
+
+        <!-- Job 2: Excellerate -->
+        <div class="animate__animated animate__fadeInRight animate__delay-1s bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center mb-4">
+            <img src="https://via.placeholder.com/50" alt="Excellerate Logo" class="rounded-full w-12 h-12 mr-4">
+            <h3 class="text-xl font-semibold text-blue-500">Data Analyst Intern @ Excellerate</h3>
+          </div>
+          <p class="text-gray-700">Optimized ad performance, slashed marketing costs by 20%. Visualized insights that boosted ROI by 15%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100 h-screen">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-10">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="max-w-xs rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://via.placeholder.com/150" alt="Project Image" class="rounded-t-lg w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Trade Reconciliation System</h3>
+            <p class="text-gray-600 mt-2">Python-based tool for efficient transaction matching and tolerance-based reconciliation.</p>
+            <a href="https://github.com/amohammedalhaan/Trade-Reconciliation-System" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="max-w-xs rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://via.placeholder.com/150" alt="Project Image" class="rounded-t-lg w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">EduLinker</h3>
+            <p class="text-gray-600 mt-2">Web app to help users find internship opportunities based on specific topics.</p>
+            <a href="https://github.com/amohammedalhaan/EduLinker" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="max-w-xs rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://via.placeholder.com/150" alt="Project Image" class="rounded-t-lg w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">AI Skill Navigator</h3>
+            <p class="text-gray-600 mt-2">AI-powered personalized learning system dynamically generating content based on student profiles.</p>
+            <a href="https://github.com/amohammedalhaan/AI-SkillNavigator" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-900 text-white h-screen">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Contact</h2>
+      <p class="text-lg mb-4">Feel free to reach out to me for opportunities, collaborations, or just to connect!</p>
+      <a href="mailto:a.md.alhaan@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-5">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 A Mohammed Alhaan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
